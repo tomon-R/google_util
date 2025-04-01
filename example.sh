@@ -1,6 +1,6 @@
-./get_oauth_refresh_token.sh ../secret/client_secrets.json \
+./get_oauth_refresh_token.sh ../secrets/client_secrets.json \
     -k web \
-    -od ../secret \
+    -od ../secrets \
     -of refresh_token.json \
     -s https://www.googleapis.com/auth/drive \
     -s https://www.googleapis.com/auth/forms \
@@ -9,7 +9,7 @@
     -s https://www.googleapis.com/auth/documents \
     -s https://www.googleapis.com/auth/script.scriptapp
 
-./get_oauth_access_token.sh ../secret/client_secrets.json ../secret/refresh_token.json \
+./get_oauth_access_token.sh ../secrets/client_secrets.json ../secrets/refresh_token.json \
     -k web \
-    -od ../secret \
+    -od ../secrets \
     -of access_token.json
